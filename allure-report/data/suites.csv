@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4670","navigate to form page @smoke @regression","chromium","Thu Dec 05 00:44:32 EET 2024","passed","Thu Dec 05 00:44:37 EET 2024","","tests\usePageObjects.spec.ts","",""
+"","3945","parameterized methods @smoke","chromium","Thu Dec 05 00:44:37 EET 2024","passed","Thu Dec 05 00:44:41 EET 2024","","tests\usePageObjects.spec.ts","",""
