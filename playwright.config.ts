@@ -36,8 +36,8 @@ export default defineConfig<TestOptions>({
         : process.env.STAGING === '1' ? 'http://localhost:4202'
         : 'http://localhost:4200',
 
-    trace: 'on-first-retry',
     screenshot: "only-on-failure",
+    trace: 'retain-on-failure',
     actionTimeout: 20000,
     navigationTimeout: 25000,
     video: {
