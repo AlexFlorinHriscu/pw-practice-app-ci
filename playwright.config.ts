@@ -14,23 +14,22 @@ export default defineConfig<TestOptions>({
   },
   
   retries: 1,
-  reporter: process.env.CI ? [["@argos-ci/playwright/reporter"]] : 'html',
 
-  // reporter: [
-  //   process.env.CI ? ["dot"] : ["list"],
-  //   [
-  //     "@argos-ci/playwright/reporter",
-  //     {
-  //       // Upload to Argos on CI only.
-  //       uploadToArgos: true,
-  //       //token: 'af5218d1233745b5b9f86ecd2c12e145a8d7d253'
-  //     },
-  //   ],
-  //   ['json', {outputFile: 'test-results/jsonReport.json'}],
-  //   ['junit', {outputFile: 'test-results/junitReport.xml'}],
-  //   //['allure-playwright'],
-  //   ['html']
-  // ],
+  reporter: [
+    process.env.CI ? ["dot"] : ["list"],
+    [
+      "@argos-ci/playwright/reporter",
+      {
+        // Upload to Argos on CI only.
+        uploadToArgos: !!process.env.CI
+        //token: 'af5218d1233745b5b9f86ecd2c12e145a8d7d253'
+      },
+    ],
+    ['json', {outputFile: 'test-results/jsonReport.json'}],
+    ['junit', {outputFile: 'test-results/junitReport.xml'}],
+    //['allure-playwright'],
+    ['html']
+  ],
 
   use: {
     globalsQaURL: 'https://www.globalsqa.com/demo-site/draganddrop/',
