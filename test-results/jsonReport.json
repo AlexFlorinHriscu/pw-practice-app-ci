@@ -1,0 +1,205 @@
+{
+  "config": {
+    "configFile": "C:\\work\\tutorial\\GitRepo\\pw-practice-app\\playwright.config.ts",
+    "rootDir": "C:/work/tutorial/GitRepo/pw-practice-app",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "C:\\work\\tutorial\\GitRepo\\pw-practice-app\\node_modules\\@argos-ci\\playwright\\dist\\reporter.js",
+        {
+          "uploadToArgos": false,
+          "token": "af5218d1233745b5b9f86ecd2c12e145a8d7d253"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/jsonReport.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junitReport.xml"
+        }
+      ],
+      [
+        "html",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/work/tutorial/GitRepo/pw-practice-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "dev",
+        "name": "dev",
+        "testDir": "C:/work/tutorial/GitRepo/pw-practice-app",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 40000
+      },
+      {
+        "outputDir": "C:/work/tutorial/GitRepo/pw-practice-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/work/tutorial/GitRepo/pw-practice-app",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 40000
+      },
+      {
+        "outputDir": "C:/work/tutorial/GitRepo/pw-practice-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/work/tutorial/GitRepo/pw-practice-app",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 40000
+      },
+      {
+        "outputDir": "C:/work/tutorial/GitRepo/pw-practice-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "pageObjectFullScreen",
+        "name": "pageObjectFullScreen",
+        "testDir": "C:/work/tutorial/GitRepo/pw-practice-app",
+        "testIgnore": [],
+        "testMatch": [
+          "usePageObjects.spec.ts"
+        ],
+        "timeout": 40000
+      },
+      {
+        "outputDir": "C:/work/tutorial/GitRepo/pw-practice-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "C:/work/tutorial/GitRepo/pw-practice-app",
+        "testIgnore": [],
+        "testMatch": [
+          "testMobile.spec.ts"
+        ],
+        "timeout": 40000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.2",
+    "workers": 1,
+    "webServer": {
+      "timeout": 120000,
+      "command": "npm run start",
+      "url": "http://localhost:4200"
+    }
+  },
+  "suites": [
+    {
+      "title": "tests\\usePageObjects.spec.ts",
+      "file": "tests/usePageObjects.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "testing with argos ci",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 40000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 5220,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-12-09T21:09:31.983Z",
+                  "attachments": [
+                    {
+                      "name": "argos/metadata___chromium/form layouts page",
+                      "contentType": "application/json",
+                      "path": "C:\\work\\tutorial\\GitRepo\\pw-practice-app\\test-results\\tests-usePageObjects-testing-with-argos-ci-chromium\\attachments\\argos-metadata-chromium-form-layouts-page-42c68e88fb72e13f8400103f32fcd1431a2e2fbe.json"
+                    },
+                    {
+                      "name": "argos/screenshot___chromium/form layouts page",
+                      "contentType": "image/png",
+                      "path": "C:\\work\\tutorial\\GitRepo\\pw-practice-app\\test-results\\tests-usePageObjects-testing-with-argos-ci-chromium\\attachments\\argos-screenshot-chromium-form-layouts-page-b3ede89d5255f4feb2027fbcc96008124bfb8446.png"
+                    },
+                    {
+                      "name": "argos/metadata___chromium/datepicker page",
+                      "contentType": "application/json",
+                      "path": "C:\\work\\tutorial\\GitRepo\\pw-practice-app\\test-results\\tests-usePageObjects-testing-with-argos-ci-chromium\\attachments\\argos-metadata-chromium-datepicker-page-b0524faff24328681a640ac39efac5b4d70579a7.json"
+                    },
+                    {
+                      "name": "argos/screenshot___chromium/datepicker page",
+                      "contentType": "image/png",
+                      "path": "C:\\work\\tutorial\\GitRepo\\pw-practice-app\\test-results\\tests-usePageObjects-testing-with-argos-ci-chromium\\attachments\\argos-screenshot-chromium-datepicker-page-e27d0afb396d93c09657d357d7da57478d0021c5.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8615c514838a139a7d89-1bd5582f2d6c73b9e00a",
+          "file": "tests/usePageObjects.spec.ts",
+          "line": 37,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-12-09T21:09:29.610Z",
+    "duration": 9021.56799999997,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
