@@ -1,0 +1,17 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="9.02156799999997">
+<testsuite name="tests\usePageObjects.spec.ts" timestamp="2024-12-09T21:09:31.116Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.22" errors="0">
+<testcase name="testing with argos ci" classname="tests\usePageObjects.spec.ts" time="5.22">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|tests-usePageObjects-testing-with-argos-ci-chromium\attachments\argos-metadata-chromium-form-layouts-page-42c68e88fb72e13f8400103f32fcd1431a2e2fbe.json]]
+
+[[ATTACHMENT|tests-usePageObjects-testing-with-argos-ci-chromium\attachments\argos-screenshot-chromium-form-layouts-page-b3ede89d5255f4feb2027fbcc96008124bfb8446.png]]
+
+[[ATTACHMENT|tests-usePageObjects-testing-with-argos-ci-chromium\attachments\argos-metadata-chromium-datepicker-page-b0524faff24328681a640ac39efac5b4d70579a7.json]]
+
+[[ATTACHMENT|tests-usePageObjects-testing-with-argos-ci-chromium\attachments\argos-screenshot-chromium-datepicker-page-e27d0afb396d93c09657d357d7da57478d0021c5.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
