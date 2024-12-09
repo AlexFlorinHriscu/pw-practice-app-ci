@@ -1,6 +1,6 @@
 name: Playwright Tests
 env:
-  ARGOS_TOKEN: af5218d1233745b5b9f86ecd2c12e145a8d7d253
+  ARGOS_TOKEN: e3cf0d7d52c247ef2a7c0b7c5ac411fcc9cfbad8
 on:
   push:
     branches: [ main, master ]
