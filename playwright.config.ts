@@ -14,21 +14,23 @@ export default defineConfig<TestOptions>({
   },
   
   retries: 1,
-  reporter: [
-    process.env.CI ? ["dot"] : ["list"],
-    [
-      "@argos-ci/playwright/reporter",
-      {
-        // Upload to Argos on CI only.
-        uploadToArgos: true,
-        //token: 'af5218d1233745b5b9f86ecd2c12e145a8d7d253'
-      },
-    ],
-    ['json', {outputFile: 'test-results/jsonReport.json'}],
-    ['junit', {outputFile: 'test-results/junitReport.xml'}],
-    //['allure-playwright'],
-    ['html']
-  ],
+  reporter: process.env.CI ? [["@argos-ci/playwright/reporter"]] : 'html',
+
+  // reporter: [
+  //   process.env.CI ? ["dot"] : ["list"],
+  //   [
+  //     "@argos-ci/playwright/reporter",
+  //     {
+  //       // Upload to Argos on CI only.
+  //       uploadToArgos: true,
+  //       //token: 'af5218d1233745b5b9f86ecd2c12e145a8d7d253'
+  //     },
+  //   ],
+  //   ['json', {outputFile: 'test-results/jsonReport.json'}],
+  //   ['junit', {outputFile: 'test-results/junitReport.xml'}],
+  //   //['allure-playwright'],
+  //   ['html']
+  // ],
 
   use: {
     globalsQaURL: 'https://www.globalsqa.com/demo-site/draganddrop/',
@@ -36,8 +38,8 @@ export default defineConfig<TestOptions>({
         : process.env.STAGING === '1' ? 'http://localhost:4202'
         : 'http://localhost:4200',
 
-    screenshot: "only-on-failure",
     trace: 'retain-on-failure',
+    screenshot: 'only-on-failure',
     actionTimeout: 20000,
     navigationTimeout: 25000,
     video: {
